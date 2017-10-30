@@ -1,0 +1,17 @@
+#jumbo {
+    margin-top: 5px;
+    background: sandybrown;
+    color: darkred;
+    opacity: 0.3;
+}
+
+body {
+    background: url("serene.jpg");
+}
+
+#foot {
+    color: white;
+    position: center;
+    margin-top: 400px;
+    opacity: 0.4;
+}
