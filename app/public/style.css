@@ -12,6 +12,23 @@ body {
 #foot {
     color: white;
     position: center;
-    margin-top: 400px;
+    margin-top: 200px;
     opacity: 0.4;
+}
+
+p {
+    color: white;
+    font-family: papyrus, cursive, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.message {
+    position: relative;
+    top: 75px;
+}
+
+.btn-danger {
+    position: relative;
+    top: 100px;
 }
