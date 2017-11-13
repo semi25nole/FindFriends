@@ -2,6 +2,37 @@ body {
     background: url("serene.jpg");
 }
 
-h1 {
+#jumbo {
+    margin-top: 5px;
+    background: sandybrown;
+    color: darkred;
+    opacity: 0.6;
+}
+
+p {
     color: white;
+    font-family: papyrus, cursive, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sq, .n, .sub {
+    color: white;
+    font-family: papyrus, cursive, sans-serif;
+}
+
+h4 {
+    color: white;
+    font-family: papyrus, cursive, sans-serif;
+}
+
+h3 {
+    color: darkred;
+    font-family: papyrus, cursive, sans-serif;
+}
+
+#jumbo2 {
+    background: sandybrown;
+    color: darkred;
+    opacity: 0.8;
 }
