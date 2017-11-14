@@ -71,5 +71,3 @@ let friends = [
         score: 10
     }
 ];
-
-for(let x = 0; x < friends.length; x++);

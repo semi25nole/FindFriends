@@ -9,14 +9,15 @@ var app = express();
 
 //Set an initial port, We'll use this later in our listener
 const PORT = process.env.PORT || 8080;
+app.use('/public', express.static(path.join(__dirname, './app/public')));
 
 //Tell express to use bodyParser
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser,json());
+app.use(bodyParser.json());
 
 //Create routes to our api routes section and html routes section
-require(".app/routing/apiRoutes.js");
-require("app/routing/htmlRoutes.js");
+require ("./app/routing/apiRoutes.js")(app);
+require ("./app/routing/htmlRoutes.js")(app);
 
 //make the server listen
 app.listen(PORT, function() {
