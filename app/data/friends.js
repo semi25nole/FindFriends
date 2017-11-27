@@ -1,73 +1,85 @@
 //Create an array of match options
 let friends = [
     {
-        routeName: "Frank",
-        name: "Frank",
-        occupation: "Waiter",
-        age: 19,
-        score: 7
-    },
-    {
-        routeName: "Steven",
-        name: "Steven",
-        occupation: "Lawyer",
-        age: 35,
-        score: 9
-    },
-    {
-        routeName: "James",
-        name: "James",
-        occupation: "Janitor",
-        age: 58,
-        score: 5
-    },
-    {
-        routeName: "Louis",
-        name: "Louis",
-        occupation: "Teacher",
-        age: 26,
-        score: 8
-    },
-    {
-        routeName: "Doug",
-        name: "Doug",
-        occupation: "Golfer",
-        age: 33,
-        score: 6
-    },
-    {
-        routeName: "Janice",
-        name: "Janice",
-        occupation: "Bus Driver",
-        age: 63,
-        score: 8
-    },
-    {
-        routeName: "Susie",
-        name: "Susie",
-        occupation: "HR",
-        age: 40,
-        score: 6
-    },
-    {
-        routeName: "Jill",
-        name: "Jill",
-        occupation: "Receptionist",
-        age: 23,
-        score: 10
-    },
-    {
-        routeName: "Amanda",
-        name: "Amanda",
-        occupation: "Dentist",
-        age: 35,
-        score: 3
-    },
-    {
-        routeName: "Tiffany",
-        name: "Tiffany",
-        occupation: "CEO",
-        age: 45,
-        score: 10
-    }
+        "name": "Joe",
+        "photo":"http://content.internetvideoarchive.com/content/photos/489/861915_011.jpg",
+        "scores":[
+            4,
+            2,
+            1,
+            4,
+            1,
+            2,
+            3,
+            1,
+            2,
+            4
+          ]
+      },
+      {
+        "name":"McLovin",
+        "photo":"http://www.youredm.com/wp-content/uploads/2017/07/McLovin-Cover-Photo-Now.jpg",
+        "scores":[
+            1,
+            5,
+            2,
+            4,
+            4,
+            4,
+            1,
+            1,
+            5,
+            2
+          ]
+      },
+      {
+        "name":"Jack",
+        "photo":"https://media1.popsugar-assets.com/files/thumbor/GpPFURpz6lLCmJTMxUQLMyJnN-o/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/users/0/88/11_2007/72174614.jpg",
+        "scores":[
+            5,
+            1,
+            1,
+            2,
+            4,
+            5,
+            4,
+            1,
+            2,
+            3
+          ]
+      },
+      {
+        "name":"Newman",
+        "photo":"https://i.pinimg.com/736x/c7/0c/36/c70c36e79557a0dce50bbfa32f9249f2--coffee-cake-seinfeld.jpg",
+        "scores":[
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+      },
+      {
+        "name":"George",
+        "photo":"http://www.zennioptical.com/blog/wp-content/uploads/2012/08/costanza.png",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+      }
 ];
+
+module.exports = friends;

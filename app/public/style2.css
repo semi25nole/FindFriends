@@ -31,8 +31,14 @@ h3 {
     font-family: papyrus, cursive, sans-serif;
 }
 
-#jumbo2 {
+#jumbo2, #jumbo3 {
     background: sandybrown;
     color: darkred;
     opacity: 0.8;
+}
+
+#name, #photo {
+    width: 400px;
+    position: relative;
+    left: 308px;
 }

@@ -5,7 +5,7 @@
     <title>Survey Page</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/style2.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -26,9 +26,25 @@
                         <a href="/home"><button class = "btn btn-danger">Take me Home</button></a>
 
             </div>
+
+            <div class='text-center'>
+                <div class='jumbotron' id='jumbo2'>
+
+                                                <h4 id='names'>Please enter your Name (Required)</h4>
+                        
+                                                <input type="text" name="" id="name" class="form-control" required >
+                                        
+                                                <h4 id='photos'>Please provide a link to your photo (Required)</h4>
+                        
+                                                <input type="text" name="" id="photo" class="form-control" required >
+                        
+                                                <br>
+
+                </div>
+            </div>
     
             <div class="text-center">
-                <div class="jumbotron" id="jumbo2">
+                <div class="jumbotron" id="jumbo3">
             
                     <h3><strong>Question 1</strong></h3>
             
@@ -267,11 +283,35 @@
     let result = [];
 
     $('#submit').on('click', function() {
+        /*
         var score = [$('select[name=q1]').val(), $('select[name=q2]').val(), $('select[name=q3]').val(), $('select[name=q4]').val(), $('select[name=q5]').val(), $('select[name=q6]').val(), $('select[name=q7]').val(), $('select[name=q8]').val(), $('select[name=q9]').val(), $('select[name=q10]').val()];
         result.push(score);
         console.log(result);
+        */
+
+
     });
 
+    function validate() {
+        let isValid = true;
+        $('.form-control').each(function() {
+            if($(this).val == '') {
+                isValid = false;
+            } 
+        });
+
+        $('.chosen-select').each(function() {
+            if($(this).val == '') {
+                isValid = false;
+            }
+        });
+
+        if(validate() === true) {
+            matchmaker();
+        } else {
+            alert('Please input all fields and try again');
+        }
+    }
 
     </script>
 
