@@ -1,5 +1,5 @@
 //Create an array of match options
-let friends = [
+var friends = [
     {
         "name": "Joe",
         "photo":"http://content.internetvideoarchive.com/content/photos/489/861915_011.jpg",

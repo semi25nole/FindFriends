@@ -6,12 +6,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css" type="text/css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>   
-
 
 </head>
 <body>
@@ -273,47 +267,17 @@
         
                  </div>
            
-             </div>    
+             </div>
         
     </div>
 
-    <script type="text/javascript">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 
-    
-    let result = [];
+        </script>
 
-    $('#submit').on('click', function() {
-        /*
-        var score = [$('select[name=q1]').val(), $('select[name=q2]').val(), $('select[name=q3]').val(), $('select[name=q4]').val(), $('select[name=q5]').val(), $('select[name=q6]').val(), $('select[name=q7]').val(), $('select[name=q8]').val(), $('select[name=q9]').val(), $('select[name=q10]').val()];
-        result.push(score);
-        console.log(result);
-        */
+        <script src="main.js" type="text/javascript">
 
-
-    });
-
-    function validate() {
-        let isValid = true;
-        $('.form-control').each(function() {
-            if($(this).val == '') {
-                isValid = false;
-            } 
-        });
-
-        $('.chosen-select').each(function() {
-            if($(this).val == '') {
-                isValid = false;
-            }
-        });
-
-        if(validate() === true) {
-            matchmaker();
-        } else {
-            alert('Please input all fields and try again');
-        }
-    }
-
-    </script>
+        </script>
 
 </body>
 

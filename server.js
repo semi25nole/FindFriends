@@ -1,3 +1,4 @@
+"use strict";
 //Create your list of dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -8,12 +9,12 @@ var app = express();
 
 
 //Set an initial port, We'll use this later in our listener
-const PORT = process.env.PORT || 8080;
-app.use('/public', express.static(path.join(__dirname, './app/public')));
+var PORT = process.env.PORT || 3000;
 
 //Tell express to use bodyParser
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, './app/public')));
 
 //Create routes to our api routes section and html routes section
 require ("./app/routing/apiRoutes.js")(app);
