@@ -1,3 +1,4 @@
+"use strict";
 //Create an array of match options
 var friends = [
     {
