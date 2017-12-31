@@ -1,4 +1,5 @@
-//create a variable that will require the path npm 
+"use strict";
+//create a variable that will require the path npm
 var path = require("path");
 
 //Create the proper routing to send the info from the html
